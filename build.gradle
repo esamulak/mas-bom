@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'pl.es8it.mas.bom'
-version = '1.0.0'
+version = '1.1.0'
 
 repositories {
     mavenCentral()
@@ -16,6 +16,10 @@ javaPlatform {
 
 dependencies {
     api platform('org.springframework.boot:spring-boot-dependencies:4.1.1')
+
+    constraints {
+        api 'pl.es8it.mas.core:mas-core:1.0.0'
+    }
 }
 
 publishing {
